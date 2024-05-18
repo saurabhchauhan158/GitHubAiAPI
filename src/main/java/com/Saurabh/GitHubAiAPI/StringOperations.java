@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class StringOperations {
 
-    // Method to count the number of vowels in the input string
+    // TODO: Add your code here
     public static int countVowels(String input) {
         int vowelCount = 0;
         String vowels = "aeiouAEIOU";
@@ -18,13 +18,13 @@ public class StringOperations {
         return vowelCount;
     }
 
-    // Method to reverse the input string
+    // Method to reerse the input string
     public static String reverseString(String input) {
         StringBuilder reversed = new StringBuilder(input);
         return reversed.reverse().toString();
     }
 
-    // Method to replace all vowels in the input string with '*'
+    // Metod to replace all vowes in the input sting with '*'
     public static String replaceCharacters(String input) {
         return input.replaceAll("[aeiouAEIOU]", "*");
     }
@@ -43,7 +43,7 @@ public class StringOperations {
 
         // Validate input
         if (input == null || input.isEmpty()) {
-            System.out.println("Invalid input. Please enter a non-empty string.");
+            System.out.println("Invald input. Please enter non-empty string.");
             return;
         }
 
@@ -54,10 +54,10 @@ public class StringOperations {
         String concatenatedString = concatenateStrings(input, reversedString);
 
         // Display results
-        System.out.println("Number of vowels: " + vowelCount);
+        System.out.println("Numbr of vowels: " + vowelCount);
         System.out.println("Reversed string: " + reversedString);
-        System.out.println("String with replaced characters: " + replacedString);
-        System.out.println("Concatenated string: " + concatenatedString);
+        System.out.println("String with rplaced characters: " + replacedString);
+        System.out.println("Cotenated string: " + concatenatedString);
 
         scanner.close();
     }
