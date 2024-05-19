@@ -11,6 +11,9 @@ The GitHub Pull Request AI Reviewer is a tool designed to facilitate code review
 - **AI Review Integration:** Sends pull request diffs to an AI system for review and displays the results.
 - **Error Handling:** Gracefully handles scenarios like missing pull requests or diff files.
 
+## Owner
+Saurabh Chauhan
+
 ## Getting Started
 
 ### Prerequisites
