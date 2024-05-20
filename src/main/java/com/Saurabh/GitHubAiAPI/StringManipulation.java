@@ -33,6 +33,14 @@ public class StringManipulation {
             stringArrayList.add(str);
         }
         System.out.println("ArrayList of Strings: " + stringArrayList);
+
+        // Step 7: Check if the string is a palindrome
+        boolean isPalindrome = isPalindrome(dummyString);
+        System.out.println("Is the string a palindrome? " + isPalindrome);
+
+        // Step 8: Replace "India" with "America"
+        String replacedString = dummyString.replace("India", "America");
+        System.out.println("String after replacing 'India' with 'America': " + replacedString);
     }
 
     // Helper method to find vowels in the string
@@ -44,5 +52,12 @@ public class StringManipulation {
             }
         }
         return vowels.toString();
+    }
+
+    // Helper method to check if a string is a palindrome
+    public static boolean isPalindrome(String input) {
+        String cleanInput = input.replaceAll("\\s+", "").toLowerCase(); // remove spaces and convert to lower case
+        String reversedString = new StringBuilder(cleanInput).reverse().toString();
+        return cleanInput.equals(reversedString);
     }
 }
