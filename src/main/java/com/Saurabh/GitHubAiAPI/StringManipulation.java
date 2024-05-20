@@ -33,6 +33,10 @@ public class StringManipulation {
             stringArrayList.add(str);
         }
         System.out.println("ArrayList of Strings: " + stringArrayList);
+
+        // Check if the string is a palindrome
+        boolean isPalindrome = isPalindrome(dummyString);
+        System.out.println("Is the string a palindrome? " + isPalindrome);
     }
 
     // Helper method to find vowels in the string
@@ -44,5 +48,13 @@ public class StringManipulation {
             }
         }
         return vowels.toString();
+    }
+
+    // Helper method to check if a string is a palindrome
+    // Note: This method is not efficient. It is used to demonstrate the use of regular expressions.
+    public static boolean isPalindrome(String input) {
+        String cleanedInput = input.replaceAll("[^a-zA-Z]", "").toLowerCase();
+        String reversedInput = new StringBuilder(cleanedInput).reverse().toString();
+        return cleanedInput.equals(reversedInput);
     }
 }
